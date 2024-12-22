@@ -38,8 +38,10 @@
         </div>
 
         <!-- Roll Button -->
-        <button class="button" onclick="set_turns()" type="button">Turns</button>
-        <button class="button" id="roll_button" onclick="roll()" type="button">Roll Dice</button>
+        <div class="btn">
+            <button class="button" onclick="set_turns()" type="button">Turns</button>
+            <button class="button" id="roll_button" onclick="roll()" type="button">Roll Dice</button>
+        </div>
 
         <!-- Total Scores -->
         <div class="score-section">
@@ -57,18 +59,22 @@
         <!-- Result Section -->
 
         <div class="result-section">
-            <button type="button" class="button" onclick="show_result()">Result</button>
-            <button type="button" class="button" onclick="refreshPage()">Play Again</button>
+            <div class="btn">
+                <button type="button" class="button" onclick="show_result()">Result</button>
+                <button type="button" class="button" onclick="refreshPage()">Play Again</button>
+            </div>
+
             <div>
                 <h2 class="score" id="result">Start the game!</h2>
             </div>
-            
-        </div>
-        
 
-        <div id="links"><a href="https://github.com/JitendraPra40" target="_blank">Github</a> <a href="https://www.linkedin.com/in/jitendra-prajapati-14724b250/" target="_blank">Linkedin</a></div>
+        </div>
+
+
+        <div id="links"><a href="https://github.com/JitendraPra40" target="_blank">Github</a> <a
+                href="https://www.linkedin.com/in/jitendra-prajapati-14724b250/" target="_blank">Linkedin</a></div>
     </div>
-    
+
 
 
     <div id="customPopup" class="popup-overlay" style="display:none;">
@@ -87,7 +93,7 @@
     </div>
 
     <!-- Custom Message Popup -->
-<!-- <div id="messagePopup" class="popup-overlay" style="display:none;">
+    <!-- <div id="messagePopup" class="popup-overlay" style="display:none;">
     <div class="popup-content">
         <p id="messageText">Your message goes here</p>
     </div>
