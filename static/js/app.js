@@ -1,3 +1,8 @@
+function getBaseUrl() {
+    // Check if the app is running locally (localhost) or in production
+    return window.location.hostname === 'localhost' ? 'http://127.0.0.1:5000' : 'https://roll-dice-game.onrender.com';
+}
+
 function set_turns() {
     turns = document.getElementById("turns").value;
 
@@ -8,10 +13,11 @@ function set_turns() {
     
         
     
-    
-    // Show the custom popup
-    
-    var url = "http://127.0.0.1:5000/set_turns";
+    //var url = "http://127.0.0.1:5000/set_turns";
+
+    // Get the base URL (local or production)
+    var baseUrl = getBaseUrl();
+    var url = `${baseUrl}/set_turns`;
     $.post(
         url,
         {
@@ -36,7 +42,10 @@ function roll() {
     comp_score = document.getElementById("comp_score");
     user_score = document.getElementById("user_score");
     
-    var url = "http://127.0.0.1:5000/diceRoll";
+    //var url = "http://127.0.0.1:5000/diceRoll";
+    // Get the base URL (local or production)
+    var baseUrl = getBaseUrl();
+    var url = `${baseUrl}/diceRoll`;
     $.get(url, function (data, status) {
         console.log("got response for scores", data);
         console.log(data.dice_computer);
@@ -59,7 +68,10 @@ function show_result() {
     comp_total_score = document.getElementById("comp_total_score");
     user_total_score = document.getElementById("user_total_score");
     result = document.getElementById("result");
-    var url = "http://127.0.0.1:5000/result";
+    //var url = "http://127.0.0.1:5000/result";
+    // Get the base URL (local or production)
+    var baseUrl = getBaseUrl();
+    var url = `${baseUrl}/result`;
     $.get(url, function (data, status) {
         console.log("got response for scores", data);
         console.log(data.computer_score);
