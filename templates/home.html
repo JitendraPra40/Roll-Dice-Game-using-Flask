@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Dice Game</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <!-- Link to JavaScript -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Roll Dice Game</h1>
+
+        <!-- Input Section -->
+        <form class="form">
+            <h2>Enter the number of turns:</h2>
+            <input type="number" id="turns" value="5" min="1">
+        </form>
+
+        <!-- Score Section -->
+        <div class="score-section">
+            <div>
+                <h2>Computer's Score</h2>
+                <h2 class="score" id="comp_score">0</h2>
+            </div>
+
+            <div>
+                <h2>User's Score</h2>
+                <h2 class="score" id="user_score">0</h2>
+            </div>
+        </div>
+
+        <!-- Roll Button -->
+        <button class="button" onclick="set_turns()" type="button">TURNS</button>
+        <button class="button" id="roll_button" onclick="roll()" type="button">ROLL DICE</button>
+
+        <!-- Total Scores -->
+        <div class="score-section">
+            <div>
+                <h2>Computer's Total Score</h3>
+                    <h2 class="score" id="comp_total_score">0</h2>
+            </div>
+
+            <div>
+                <h2>User's Total Score</h2>
+                <h2 class="score" id="user_total_score">0</h2>
+            </div>
+        </div>
+
+        <!-- Result Section -->
+
+        <div class="result-section">
+            <button type="button" class="button" onclick="show_result()">Result</button>
+
+            <div>
+                <h2 class="score" id="result">Start the game!</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="customPopup" class="popup-overlay" style="display:none;">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <p id="popupMessage"></p> <!-- Dynamic message here -->
+        </div>
+    </div>
+
+
+
+    <div id="messagePopup" class="popup-overlay" style="display:none;">
+        <div class="popup-content">
+            <p id="messageText">Your message goes here</p>
+        </div>
+    </div>
+
+    <!-- Custom Message Popup -->
+<!-- <div id="messagePopup" class="popup-overlay" style="display:none;">
+    <div class="popup-content">
+        <p id="messageText">Your message goes here</p>
+    </div>
+</div> -->
+
+</body>
+
+</html>
