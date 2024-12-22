@@ -173,7 +173,7 @@ h2 {
 }
 
 /* Mobile Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 360px) {
     
     body {
         flex-direction: column;
@@ -198,7 +198,7 @@ h2 {
     }
 
     .score-section {
-        flex-direction: row;
+        flex-direction: column;
         margin: 5px 0;
         padding: 10px;
     }
