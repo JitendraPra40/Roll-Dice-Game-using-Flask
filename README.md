@@ -33,7 +33,7 @@ This project is a simple web-based dice game built using **Flask** for the backe
 
 ## ⚙️ How to Run the Project
 ### Prerequisites
-- Python 3.x
+- Python 3.13.1
 - Flask
 - jQuery (linked in HTML)
 
