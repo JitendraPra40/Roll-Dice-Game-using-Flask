@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh !important;
     overflow-y: hidden;
 }
 .roll{
@@ -183,7 +183,7 @@ h2 {
     
     body {
         flex-direction: column;
-        height: 100vh;
+        height: auto;
         padding: 10px;
 
         overflow-y: auto;
