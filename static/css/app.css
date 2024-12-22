@@ -14,6 +14,8 @@ body {
     height: 100vh;
     overflow-y: hidden;
 }
+.roll{
+    color: white;}
 .form h2{
     margin-bottom: 5px;
     padding-bottom: 5px;
@@ -95,7 +97,7 @@ h2 {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     outline: none;
     border-radius: 20px;
     border: 2px solid #6a6969;
@@ -117,7 +119,7 @@ h2 {
 #result {
     font-size: 22px;
     font-weight: bold;
-    color: white; /* Green color for "You win!" */
+    color: rgb(61, 224, 63); /* Green color for "You win!" */
 
 }
 
@@ -182,7 +184,7 @@ h2 {
 
 
 /* Responsive Design for mobile */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .game-container {
         width: 90%;
         padding: 20px;
@@ -204,4 +206,4 @@ h2 {
         font-size: 14px;
         padding: 8px 16px;
     }
-}
+} */
