@@ -65,7 +65,7 @@ function show_result() {
     comp_total_score = document.getElementById("comp_total_score");
     user_total_score = document.getElementById("user_total_score");
     result = document.getElementById("result");
-    //var url = "http://127.0.0.1:5000/result";
+   // var url = "http://127.0.0.1:5000/result";
     // Get the base URL (local or production)
     var baseUrl = getBaseUrl();
     var url = `${baseUrl}/result`;
