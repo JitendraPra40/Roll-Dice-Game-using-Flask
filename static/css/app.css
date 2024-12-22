@@ -183,8 +183,9 @@ h2 {
     
     body {
         flex-direction: column;
-        height: auto;
+        height: 100vh;
         padding: 10px;
+
         overflow-y: auto;
     }
 
