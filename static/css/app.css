@@ -84,6 +84,9 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 15px;
+    width: 150px;   /* Set the width */
+    height: 50px;   /* Set the height */
+    
     
 }
 
@@ -94,6 +97,7 @@ h2 {
 /* Result Section */
 .result-section {
     margin-top: 15px;
+    /* display: inline; */
 }
 
 #result {
@@ -102,6 +106,17 @@ h2 {
     color: #28a745; /* Green color for "You win!" */
 
 }
+
+
+
+#links a{
+    margin: 0px;
+    padding: 0;
+    color: green;
+    text-decoration: none;
+    font-size: x-small;
+}
+
 
 
 

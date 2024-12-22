@@ -38,8 +38,8 @@
         </div>
 
         <!-- Roll Button -->
-        <button class="button" onclick="set_turns()" type="button">TURNS</button>
-        <button class="button" id="roll_button" onclick="roll()" type="button">ROLL DICE</button>
+        <button class="button" onclick="set_turns()" type="button">Turns</button>
+        <button class="button" id="roll_button" onclick="roll()" type="button">Roll Dice</button>
 
         <!-- Total Scores -->
         <div class="score-section">
@@ -58,13 +58,17 @@
 
         <div class="result-section">
             <button type="button" class="button" onclick="show_result()">Result</button>
-
+            <button type="button" class="button" onclick="refreshPage()">Play Again</button>
             <div>
                 <h2 class="score" id="result">Start the game!</h2>
             </div>
+            
         </div>
-    </div>
+        
 
+        <div id="links"><a href="https://github.com/JitendraPra40">Github</a> <a href="https://www.linkedin.com/in/jitendra-prajapati-14724b250/">Linkedin</a></div>
+    </div>
+    
 
 
     <div id="customPopup" class="popup-overlay" style="display:none;">
@@ -88,7 +92,6 @@
         <p id="messageText">Your message goes here</p>
     </div>
 </div> -->
-
 </body>
 
 </html>

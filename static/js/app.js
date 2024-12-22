@@ -108,4 +108,10 @@ function showMessage(message) {
     setTimeout(function() {
         document.getElementById("messagePopup").style.display = "none";
     }, 1000); // 3000 milliseconds = 3 seconds
+
+
+    function refreshPage() {
+        // Reloads the current page
+        location.reload();
+    }
 }
