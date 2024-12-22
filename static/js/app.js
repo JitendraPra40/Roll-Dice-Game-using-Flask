@@ -7,12 +7,9 @@ function set_turns() {
     turns = document.getElementById("turns").value;
 
     console.log(turns);
-    
-    showMessage(turns +  " " + " " + "Round selected");
-    
-    
-        
-    
+
+    showMessage(turns + " " + " " + "Round selected");
+
     //var url = "http://127.0.0.1:5000/set_turns";
 
     // Get the base URL (local or production)
@@ -33,7 +30,7 @@ function set_turns() {
 let turnCounter = 0;
 function roll() {
     turns = document.getElementById("turns").value;
-    
+
     if (turnCounter > turns) {
         alert("You can only roll the dice 5 times.");
         return; // Stop execution if the turn limit is reached
@@ -41,7 +38,7 @@ function roll() {
     console.log("Page Loaded");
     comp_score = document.getElementById("comp_score");
     user_score = document.getElementById("user_score");
-    
+
     //var url = "http://127.0.0.1:5000/diceRoll";
     // Get the base URL (local or production)
     var baseUrl = getBaseUrl();
@@ -52,9 +49,9 @@ function roll() {
         console.log(data.dice_user);
         comp_score.innerHTML = data.computer_roll.toString();
         user_score.innerHTML = data.user_roll.toString();
-        
+
         turnCounter++;
-       
+
         if (turnCounter > turns) {
             document.getElementById("roll_button").disabled = true;
             showGameOverPopup(); // Show the custom popup
@@ -87,8 +84,8 @@ function showGameOverPopup() {
     // Set the message for the popup
     document.getElementById("popupMessage").innerText = "Game Over! Check the Result.";
     document.getElementById("customPopup").style.display = "flex";
-    
-    setTimeout(function() {
+
+    setTimeout(function () {
         document.getElementById("messagePopup").style.display = "none";
     }, 1000);
 }
@@ -105,13 +102,12 @@ function showMessage(message) {
     document.getElementById("messagePopup").style.display = "flex";
 
     // Hide the popup after 3 seconds
-    setTimeout(function() {
+    setTimeout(function () {
         document.getElementById("messagePopup").style.display = "none";
     }, 1000); // 3000 milliseconds = 3 seconds
 
-
-    function refreshPage() {
-        // Reloads the current page
-        location.reload();
-    }
+}
+function refreshPage() {
+    // Reloads the current page
+    location.reload();
 }

@@ -33,4 +33,5 @@ if __name__ == "__main__":
     # Get the port from the environment variable or default to 5000 for local
     port = int(os.environ.get('PORT', 5000))
     # Run the app on all interfaces (0.0.0.0) for cloud deployment
+    # app.run(debug=True)
     app.run(debug=True, host='0.0.0.0', port=port)
