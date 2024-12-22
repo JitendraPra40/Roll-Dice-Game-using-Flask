@@ -198,7 +198,7 @@ h2 {
     }
 
     .score-section {
-        flex-direction: column;
+        flex-direction: row;
         margin: 5px 0;
         padding: 10px;
     }
