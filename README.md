@@ -1,5 +1,5 @@
 # 🎲 Dice Game (Flask + JavaScript)
-website link: https://roll-dice-game.onrender.com/ 
+Website link: https://roll-dice-game.onrender.com/ 
 This project is a simple web-based dice game built using **Flask** for the backend and **JavaScript/jQuery** for the frontend. The game simulates a dice roll between a user and the computer, and the one with the highest total score after a set number of turns wins!
 
 ## 🚀 Features
